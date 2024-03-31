@@ -414,13 +414,19 @@ def plot_content_added_polar(data):
 
 
 
+import subprocess
 
+# Function to install dependencies
+def install_dependencies():
+    subprocess.call(['pip', 'install', '-r', 'requirements.txt'])
 
 
 
 
 
 def main():
+    install_dependencies()
+
     st.title("Streamlit Visualization Project")
 
     # Load the dataset
